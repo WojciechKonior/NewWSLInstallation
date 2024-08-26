@@ -35,9 +35,9 @@ rm -rf ~/.config/nvim/.git
 ```
 Open neovim and configure it.
 
-## INSTALLING PROGRAMMING TOOLS
+## INSTALLING UTILS
 ```
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y cmake clang wine wine32
+sudo apt install -y cmake clang wine wine32 cifs-utils neofetch
 ```

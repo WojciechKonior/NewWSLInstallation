@@ -5,6 +5,10 @@ Open PowerShell terminal with admin priviliges and run
 wsl --install --distribution Ubuntu-24.04
 ```
 
+## INSTALLING NERD FONTS
+Download https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/VictorMono.zip
+and install it.
+
 ## INSTALLING ZSH
 ```
 sudo apt install -y zsh

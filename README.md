@@ -1,7 +1,7 @@
 ## INSTALLING WSL
 Open PowerShell terminal with admin priviliges and run
 ```
-wsl --install
+wsl --install --distribution Ubuntu-24.04
 ```
 
 ## INSTALLING ZSH

@@ -19,6 +19,9 @@ sudo apt install -y zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cd ~ && git clone https://github.com/grappas/dotfiles
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/dotfiles
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/dotfiles
 ```
 Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
 Now open WSL terminal and configure the theme.
@@ -32,6 +35,7 @@ sudo update-alternatives --config editor
 sudo update-alternatives --config vim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
+cd ~/.config && ln -s $HOME/dotfiles/lazynvim nvim
 ```
 Open neovim and configure it.
 
@@ -39,5 +43,5 @@ Open neovim and configure it.
 ```
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y cmake clang wine wine32 cifs-utils neofetch
+sudo apt install -y cmake clang wine wine32 cifs-utils neofetch htop
 ```

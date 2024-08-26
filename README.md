@@ -1,4 +1,5 @@
 ## INSTALLING WSL
+Go to the `Turn Windows features on or off` in Control Panel and check the `Linux Subsystem for Linux`. Hit ok and restart.
 Open PowerShell terminal with admin priviliges and run
 ```
 wsl --install --distribution Ubuntu-24.04

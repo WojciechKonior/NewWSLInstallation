@@ -33,3 +33,10 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
 Open neovim and configure it.
+
+## INSTALLING PROGRAMMING TOOLS
+```
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install -y cmake clang wine wine32
+```

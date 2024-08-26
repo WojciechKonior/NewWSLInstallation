@@ -1,5 +1,5 @@
 ## INSTALLING WSL
-Open PowerShell terminal and run
+Open PowerShell terminal with admin priviliges and run
 ```
 wsl --install
 ```

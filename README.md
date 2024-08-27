@@ -51,3 +51,23 @@ Open neovim and it's ready to go.
 ### INSTALLING NERD FONTS
 Download https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/VictorMono.zip
 and install it. Now you can change terminal fonts to VictorMono NF.
+
+### INSTALLING OPENFOAM
+```
+sudo sh -c "wget -O - https://dl.openfoam.org/gpg.key > /etc/apt/trusted.gpg.d/openfoam.asc"
+sudo add-apt-repository http://dl.openfoam.org/ubuntu
+sudo apt update
+sudo apt -y install openfoam11
+echo ". /opt/openfoam11/etc/bashrc" >> $HOME/.zshrc
+```
+
+Getting started
+```
+mkdir -p $FOAM_RUN
+cd $FOAM_RUN
+cp -r $FOAM_TUTORIALS/incompressibleFluid/pitzDailySteady .
+cd pitzDailySteady
+blockMesh
+foamRun
+paraFoam
+```

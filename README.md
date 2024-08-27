@@ -24,9 +24,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
+
 Add `plugins=(gh colorize nmap rsync ripgrep tmux ssh-agent fzf sudo git autojump zsh-syntax-highlighting zsh-autosuggestions)` to your .zshrc
+
 Add `export FZF_BASE=/path/to/fzf/install/dir` to your .zshrc
+
 Now open WSL terminal and configure the theme.
+
 
 ## INSTALLING NEOVIM
 ```

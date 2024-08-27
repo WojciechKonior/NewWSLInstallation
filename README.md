@@ -1,4 +1,4 @@
-## INSTALLING WSL
+### INSTALLING WSL
 Go to the `Turn Windows features on or off` in Control Panel and check the `Linux Subsystem for Linux`. Hit ok and restart.
 Open PowerShell terminal with admin priviliges and run
 ```
@@ -9,19 +9,18 @@ wsl --update
 wsl --install --distribution Ubuntu-24.04
 ```
 
-## INSTALLING NERD FONTS
-Download https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/VictorMono.zip
-and install it.
+### INSTALLING UTILITIES
+Run WSL Ubuntu 24.04 and bash prompt should appear. 
 
-## INSTALLING UTILITIES
+Now install some utils:
 ```
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y zsh neovim ripgrep fzf autojump neofetch htop cmake clang wine wine32 cifs-utils
+sudo apt install -y zsh neovim ripgrep fzf autojump neofetch htop mc cmake clang wine wine32 cifs-utils
 ```
 
-## CONFIGURING ZSH
+### CONFIGURING ZSH
 ```
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -39,7 +38,7 @@ export FZF_BASE=/path/to/fzf/install/dir
 in your .zshrc file. Now open WSL terminal and configure the theme.
 
 
-## CONFIGURING NEOVIM
+### CONFIGURING NEOVIM
 ```
 sudo update-alternatives --config editor
 sudo update-alternatives --config vim
@@ -48,3 +47,7 @@ ln -s $HOME/dotfiles/lazynvim $HOME/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
 Open neovim and it's ready to go.
+
+### INSTALLING NERD FONTS
+Download https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/VictorMono.zip
+and install it. Now you can change terminal fonts to VictorMono NF.

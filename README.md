@@ -57,8 +57,8 @@ and install it. Now you can change terminal fonts to VictorMono NF.
 sudo sh -c "wget -O - https://dl.openfoam.org/gpg.key > /etc/apt/trusted.gpg.d/openfoam.asc"
 sudo add-apt-repository http://dl.openfoam.org/ubuntu
 sudo apt update
-sudo apt -y install openfoam11
-echo ". /opt/openfoam11/etc/bashrc" >> $HOME/.zshrc
+sudo apt -y install openfoam12
+echo ". /opt/openfoam12/etc/bashrc" >> $HOME/.zshrc
 ```
 
 Getting started

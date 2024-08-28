@@ -1,3 +1,12 @@
+## INSTALLING AND CONFIGURING WSL UBUNTU 24.04
+Clone this repo and run:
+```
+./install-utils.sh
+./configure-zsh.sh
+./configure-neovim.sh
+```
+Or do it manually as follows:
+
 ### INSTALLING WSL
 Go to the `Turn Windows features on or off` in Control Panel and check the `Linux Subsystem for Linux`. Hit ok and restart.
 Open PowerShell terminal with admin priviliges and run

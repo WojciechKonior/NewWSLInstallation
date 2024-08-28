@@ -1,4 +1,5 @@
-# Installing utilities
+#!/bin/bash
+
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo dpkg --add-architecture i386
 sudo apt update

@@ -42,6 +42,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 sed -i 's/ZSH_THEME="robbyrussell/ZSH_THEME="powerlevel10k\/powerlevel10k/' $HOME/.zshrc 
 sed -i 's/plugins=(/plugins=(gh colorize nmap rsync ripgrep tmux ssh-agent fzf sudo autojump zsh-syntax-highlighting zsh-autosuggestions /' $HOME/.zshrc
 echo 'export FZF_BASE=/path/to/fzf/install/dir' >> $HOME/.zshrc
+echo "search() { find $2 -name $1 | xargs file }" >> $HOME/.zshrc
 ```
 Now open WSL terminal and configure the theme.
 
